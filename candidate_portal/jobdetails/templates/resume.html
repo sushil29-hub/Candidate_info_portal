@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><h2 align="center">RESUME</h2></div>
+<div>
+    <h3>Personal Details:</h3>
+    <div>
+        <span> Name: {{data['name']}}</span> <br>
+        <span> Number: {{data['number']}}</span><br>
+        <span> City: {{data['city']}}</span><br>
+        <span> Email: {{data['email']}}</span><br>
+        <span> Address: {{data['address']}}</span>
+    </div>
+
+    <h3>Technical Skills:</h3>
+    {% for skill in data['tech_skills'] %}
+        <span>&bull; {{skill}}</span>
+    {% endfor %}
+</div>
+</body>
+</html>
